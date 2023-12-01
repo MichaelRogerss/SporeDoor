@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@font-face {
+    font-family: 'HumaneBold';
+    src: url('Humane-Bold.ttf') format('truetype');
+    /* You can also include other font formats like woff, woff2 for better cross-browser support */
+  }
+:root{
+    --green:#79B791;
+    --lightgreen: #ABD1B5;
+    --smokedwhite: #EDF4ED;
+    --lightbrown: #51291E;
+    --darkbrown: #301014;
+}
+body{
+    margin:0;
+    background-color:var(--smokedwhite);
+    font-family:"Poppins"
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size:1.7rem;
+}
+.nav-brand{
+    font-weight: 300;
+}
+.nav-brand>span{
+    font-weight: 900;
+}
+.navshop>svg{
+    width:3rem;
+    height:3rem;
+}
+.navshop>svg>g>path{
+    fill:black;
+}
+
+.is-humanebold{
+    font-family: 'HumaneBold', sans-serif;
+}
+.colorex{
+    padding:5rem 5rem;
+}
+.colorex.dg{
+    background-color:var(--green)
+}
+.colorex.lg{
+    background-color:var(--lightgreen)
+}
+.colorex.sw{
+    background-color:var(--smokedwhite)
+}
+.colorex.lb{
+    background-color:var(--lightbrown)
+}
+.colorex.db{
+    background-color:var(--darkbrown)
+}
+
+.bold{
+    font-weight: 900;
+}
+
+section>h1{
+    font-size: 7rem;
+    letter-spacing: 0.3rem;
+    padding:0rem 3rem;
+    margin:0rem;
+}
+.landingh1>span{
+    color:var(--green)
+}
