@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>SporeDoor - High Quality Mushrooms</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,13 +9,76 @@
    
 </head>
 <body>
+    <div class="cart-sidebar">
+        <button class="close-btn" onclick="closecart()">
+            X
+        </button>
+        <div class="cart-item-list">
+            <div class="cart-item">
+                <div class="cart-item-top">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                    <p class="cart-item-title">
+                        Amanita Gummies
+                    </p>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-quantity">
+                    <button onclick="subQuantity(this)" class="cart-item-quantity-minus">
+                        -
+                    </button>
+                    <div class="cart-item-quantity-box">
+                        1
+                    </div>
+                    <button onclick="addQuantity(this)" class="cart-item-quantity-plus">
+                        +
+                    </button>
+                    </div>
+                    <p class="cart-item-price">
+                        $13.99
+                    </p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-top">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                    <p class="cart-item-title">
+                        Amanita Gummies
+                    </p>
+                </div>
+                <div class="cart-item-bottom">
+                    <div class="cart-item-quantity">
+                    <button onclick="subQuantity(this)" class="cart-item-quantity-minus">
+                        -
+                    </button>
+                    <div class="cart-item-quantity-box">
+                        1
+                    </div>
+                    <button onclick="addQuantity(this)" class="cart-item-quantity-plus">
+                        +
+                    </button>
+                    </div>
+                    <p class="cart-item-price">
+                        $13.99
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+        <p>
+            Total: $0.00
+        </p>
+        <button class="is-primary">
+            Checkout
+        </button>
+    </div>
     <nav>
         <a class="nav-brand">
             <span>Spore</span>Door
         </a>
-        <a class="navshop">
+        <button class="navshop" onclick="opencart()">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1rem" height="1rem" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd"><g><path d="M16.25 7a.75.75 0 0 1-1.5 0V5.5a2.75 2.75 0 1 0-5.5 0V7a.75.75 0 0 1-1.5 0V5.5a4.25 4.25 0 0 1 8.5 0z" fill="#FFFFFF" opacity="1" data-original="#000000"></path><path d="m19.342 8.35.8 12a2.253 2.253 0 0 1-2.245 2.4H6.103a2.251 2.251 0 0 1-2.245-2.4l.8-12a2.25 2.25 0 0 1 2.245-2.1h10.194a2.25 2.25 0 0 1 2.245 2.1zm-4.856 2.328a2.753 2.753 0 0 1-4.972 0 .75.75 0 1 0-1.355.644 4.25 4.25 0 0 0 7.682 0 .75.75 0 0 0-1.355-.644z" fill="#FFFFFF" opacity="1" data-original="#000000"></path></g></svg>
-        </a>
+        </button>
     </nav>
 
     <section >
@@ -38,5 +101,30 @@
     <section class="colorex db">
         #301014
     </section>
+    <script>
+        var carttotal = 0;
+        var cart = document.getElementsByClassName("cart-sidebar")[0]
+        var closecartbtn = document.getElementsByClassName("close-btn")[0]
+        function closecart(){
+            cart.classList.add("hidden");
+        }
+        function opencart(btn){
+            cart.classList.remove("hidden");
+        }
+        function addQuantity(btn){
+            var quantity = btn.parentElement.querySelector("div");
+            var quantitycount = parseInt(quantity.innerHTML)
+
+            quantitycount = quantitycount+1
+            quantity.innerHTML = quantitycount
+        }
+        function subQuantity(btn){
+            var quantity = btn.parentElement.querySelector("div");
+            var quantitycount = parseInt(quantity.innerHTML)
+
+            quantitycount = quantitycount-1
+            quantity.innerHTML = quantitycount
+        }
+        </script>
 </body>
 </html>
