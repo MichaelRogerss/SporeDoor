@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'HumaneBold';
-    src: url('Humane-Bold.ttf') format('truetype');
+    src: url('Nohemi-Bold.otf') format('truetype');
     /* You can also include other font formats like woff, woff2 for better cross-browser support */
   }
 :root{
@@ -74,7 +74,7 @@ nav{
 }
 
 section>h1{
-    font-size: 7rem;
+    font-size: 5rem;
     letter-spacing: 0.3rem;
     padding:0rem 3rem;
     margin:0rem;
