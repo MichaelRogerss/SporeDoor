@@ -9,7 +9,23 @@
    
 </head>
 <body>
-    <div class="cart-sidebar">
+    <div class="modal 21check">
+        <div class="modal-box">
+            <a class="nav-brand">
+                <span>Spore</span>Door
+            </a>
+            Are you 21 or older?
+            <div class="checkbtns21">
+                <button onclick="remove21()"class="button is-primary">
+                    Yes
+                </button>
+                <button class="button is-primary">
+                    No
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-sidebar hidden">
         <button class="close-btn" onclick="closecart()">
             X
         </button>
@@ -73,21 +89,49 @@
         </button>
     </div>
     <nav>
-        <a class="nav-brand">
+        <a href="" class="nav-brand">
             <span>Spore</span>Door
         </a>
         <button class="navshop" onclick="opencart()">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1rem" height="1rem" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd"><g><path d="M16.25 7a.75.75 0 0 1-1.5 0V5.5a2.75 2.75 0 1 0-5.5 0V7a.75.75 0 0 1-1.5 0V5.5a4.25 4.25 0 0 1 8.5 0z" fill="#FFFFFF" opacity="1" data-original="#000000"></path><path d="m19.342 8.35.8 12a2.253 2.253 0 0 1-2.245 2.4H6.103a2.251 2.251 0 0 1-2.245-2.4l.8-12a2.25 2.25 0 0 1 2.245-2.1h10.194a2.25 2.25 0 0 1 2.245 2.1zm-4.856 2.328a2.753 2.753 0 0 1-4.972 0 .75.75 0 1 0-1.355.644 4.25 4.25 0 0 0 7.682 0 .75.75 0 0 0-1.355-.644z" fill="#FFFFFF" opacity="1" data-original="#000000"></path></g></svg>
-        </button>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M310.449 226.569a289.626 289.626 0 0 0-36.12-2.958l-37.383-.693a288.551 288.551 0 0 0-36.608 1.649l-36.159 137.306a76.777 76.777 0 0 0-2.4 15.116l-1.842 31.937a70.36 70.36 0 0 0 .5 14.266A71.166 71.166 0 0 0 230.825 484h37.919a71.345 71.345 0 0 0 70.51-61.766c0-.023.006-.055.009-.078a71.083 71.083 0 0 0-.347-20.946Z" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path><path d="M398.907 94.969c-67.632-60.01-114.376-66.95-143.653-66.95-36.33 0-71.054 9.918-103.206 29.478-28.8 17.518-54.36 42.334-73.924 71.765-4.749 7.145-10.265 15.607-15.165 24.195a45.8 45.8 0 0 0-1.784 42.715c7.242 15.388 22.4 26.462 40.542 29.623l.045.008a61.585 61.585 0 0 0 23.942-.61l39.043-8.858a302.328 302.328 0 0 1 66.83-7.468q2.816 0 5.629.052l37.383.695a303.032 303.032 0 0 1 52.387 5.557l54.42 10.641a60.869 60.869 0 0 0 21.66.32l6.583-1.084c18.425-3.037 33.821-14.166 41.183-29.772a45.351 45.351 0 0 0-1.882-42.676c-10.806-18.617-26.705-36.931-50.033-57.631Z" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+        Cart</button>
     </nav>
 
     <section >
         <h1 class="landingh1 is-humanebold">
             Unlock Your <span>Mind</span>
-        </h1>>
+        </h1>
     </section>
     <section class="colorex dg">
-        #79B791
+        <h2>
+            Shop By Category
+        </h2>
+        <div class="shopbycatlist scrollable-element" id="scrollableElement">
+            <div class="shopybycatbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                Mushrooms
+            </div>
+            <div class="shopybycatbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                Edibles
+            </div>
+            <div class="shopybycatbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                Grow Kits
+            </div>
+            <div class="shopybycatbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                Mushrooms
+            </div>
+            <div class="shopybycatbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXMzMyUlJTPz8+Wlpa4uLjKysqSkpLExMSmpqacnJyhoaHHx8e+vr6tra3CwsKysrLJFgFvAAADgElEQVR4nO3X3ZqjIAyAYUNQfgS9/7vdBLXt7G572PHgew/m0SodQiDQaQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+UwjhF5p+zxx737fjOpyedx+bhtZ7b/N/mt4p9JSLiJboHYr5sI8nwW739VPbvahI6f7OXI+mdcQbtp57u0mM2fpYVTRZv/bFeiyyZO9msE8t9PS2ZdhVxcZHd3t9PprK4uGGaKFr2W8RYlukpikWycG6LDoSEedp3Hjo+W0W1ypLszkgZRsRFm86Etos7KxabpHFVmqyfhQpI0LZrrW0qlb/xIJ4I2X1uW0jMSKU/li43b9nFcnzt8L4yKfhVvSMsM3z0a2o2oNNN+v49WJK6zTb3+uD4FezhdNGhHk9m1paq6WySt2+G8oHXc9ZKrtVF+946KrW8c26eb4TyrLk0HRZfixNH5xjllavLh6jTdI+eyZL/HokbzQrDO1Yel4til/bOrJI1ix6TrWQLZbkq/N1ZfoLvvYsQm+rnvGo4tU4ypjFNxA2KyjesxC99lvycvJKqt7xZ4TTFpeyZ8ntdXV10eordbbimfdjpCxCT55FeI9q6hVjrBu7ir15UDa7PEKPJMvyDMiSWMpr5fEN45yKbbe986jJNlD+WbM5f4sI5+51/bzxQKP37H8RhmabXn+Zo7YqVa9K5GVmHRXrbhFa0dQfFSGJF/769zo0c9EfxcMC0h/75RiXcLN1aL0clW8YHUpja/un0vgTOfp+ve27+mND8LZj9d4tQisV+Sr/69goLEKbpbbCrH+tSn68GuxdfdnjrAQ/Y2ieXIvQZqltMZ7ZLuXtaeGL1pfDVcqLZ3MfY2+TNwdPx2PHt9BLrssziVah+vUzZF8sm2ErUsM4yKUwl1vs+GGkMI3jyqg5e9rOs4gd5NqWx5FsWJMlZetSr8R4CkfTZMOy2YBsyU4O4yBn0zRF0f7mv35TsF6W6qzK+/TS6j8WprE52t7wXKNhr57VpnLu+GOnGE3HgPTj9eKPxveolBukcAp+EFmc+nxrWRcp54/CvfoB4FqjoS62CYRUr1Obpf9sOg7nay+yaD4S7N9zXf+2+DBuU4uxPQ8x8eX8Yk/8V9U2/p6PT2NEZm96bh1hbbGlOxRSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfPIHk9IaOn2T2mUAAAAASUVORK5CYII="/>
+                Mushrooms
+            </div>
+        </div>
+        
+    </section>
+    <section class="colorex lb">
+        Welcome to Spore Door
     </section>
     <section class="colorex lg">
         #ABD1B5
@@ -101,6 +145,38 @@
     <section class="colorex db">
         #301014
     </section>
+
+
+    <script>
+        var isDragging = false;
+        var startPosition = 0;
+        var scrollableElement = document.getElementById('scrollableElement');
+      
+        scrollableElement.addEventListener('mousedown', function (e) {
+          isDragging = true;
+          startPosition = e.clientX;
+          scrollableElement.style.cursor = 'grabbing';
+        });
+      
+        document.addEventListener('mouseup', function () {
+          isDragging = false;
+          scrollableElement.style.cursor = 'grab';
+        });
+      
+        document.addEventListener('mousemove', function (e) {
+          if (!isDragging) return;
+      
+          var deltaX = e.clientX - startPosition;
+          scrollableElement.scrollLeft -= deltaX;
+      
+          startPosition = e.clientX;
+        });
+      </script>
+    <script>
+        function remove21(){
+            document.getElementsByClassName("21check")[0].remove()
+        }
+    </script>
     <script>
         var carttotal = 0;
         var cart = document.getElementsByClassName("cart-sidebar")[0]

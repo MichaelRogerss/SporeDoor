@@ -5,6 +5,9 @@
     src: url('Nohemi-Bold.otf') format('truetype');
     /* You can also include other font formats like woff, woff2 for better cross-browser support */
   }
+  a {
+            text-decoration: none;
+        }
 :root{
     --green:#79B791;
     --lightgreen: #ABD1B5;
@@ -13,10 +16,11 @@
     --darkbrown: #301014;
 }
 p{margin:0}
+a{text-decoration: none;}
 body{
     margin:0;
     background-color:var(--smokedwhite);
-    font-family:"Poppins"
+    font-family:"HumaneBold"
 }
 nav{
     display:flex;
@@ -27,7 +31,10 @@ nav{
     font-size:1.7rem;
 }
 .nav-brand{
+    color:black;
     font-weight: 300;
+    font-family:"Poppins";
+    cursor:pointer;
 }
 .nav-brand>span{
     font-weight: 900;
@@ -35,6 +42,11 @@ nav{
 .navshop{
     border: none;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 .navshop>svg{
     width:3rem;
@@ -63,6 +75,7 @@ nav{
     background-color:var(--smokedwhite)
 }
 .colorex.lb{
+    color:white;
     background-color:var(--lightbrown)
 }
 .colorex.db{
@@ -79,8 +92,12 @@ section>h1{
     padding:0rem 3rem;
     margin:0rem;
 }
+.landingh1{
+    margin-bottom:2rem;
+}
 .landingh1>span{
-    color:var(--green)
+    color:var(--green);
+    
 }
 .cart-sidebar{
     position: fixed;
@@ -159,4 +176,76 @@ button.is-primary:hover{
 }
 .hidden{
     display:none;
+}
+
+.modal{
+    background-color: #00000057;
+    z-index: 3;
+    position: fixed;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+}
+.modal-box{
+    background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      gap:2rem;
+}
+.checkbtns21{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.checkbtns21>button{
+    border-radius:50px;
+    width: 100%;
+}
+.colorex{
+    padding:2rem;
+}
+.colorex>h2{
+    font-size: 24px;
+}
+
+.shopbycatlist{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    overflow:scroll;
+}
+.shopbycatlist::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for webkit browsers */
+  }
+.shopybycatbox{
+    background-color:var(--smokedwhite);
+    padding:1rem;
+    border-radius:10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.shopybycatbox:hover{
+    cursor:pointer;
+    transform:scale(1.02);
+}
+.shopybycatbox>img{
+    height:8rem;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
 }
