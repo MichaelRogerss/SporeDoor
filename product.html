@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>SporeDoor - High Quality Mushrooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="spore.css">
+   
+</head>
+<body>
+    <div class="modal 21check hidden">
+        <div class="modal-box">
+            <a class="nav-brand">
+                <span>Spore</span>Door
+            </a>
+            Are you 21 or older?
+            <div class="checkbtns21">
+                <button onclick="remove21()"class="button is-primary">
+                    Yes
+                </button>
+                <button class="button is-primary">
+                    No
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-sidebar hidden">
+        <button class="close-btn" onclick="closecart()">
+            X
+        </button>
+        <div class="cart-item-list">
+
+
+
+            
+        </div>
+        <p id="cartotal">
+            Total: $0.00
+        </p>
+        <button class="is-primary">
+            Checkout
+        </button>
+    </div>
+    <nav>
+        <a href="/" class="nav-brand">
+            <span>Spore</span>Door
+        </a>
+        <button class="navshop" onclick="opencart()">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M310.449 226.569a289.626 289.626 0 0 0-36.12-2.958l-37.383-.693a288.551 288.551 0 0 0-36.608 1.649l-36.159 137.306a76.777 76.777 0 0 0-2.4 15.116l-1.842 31.937a70.36 70.36 0 0 0 .5 14.266A71.166 71.166 0 0 0 230.825 484h37.919a71.345 71.345 0 0 0 70.51-61.766c0-.023.006-.055.009-.078a71.083 71.083 0 0 0-.347-20.946Z" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path><path d="M398.907 94.969c-67.632-60.01-114.376-66.95-143.653-66.95-36.33 0-71.054 9.918-103.206 29.478-28.8 17.518-54.36 42.334-73.924 71.765-4.749 7.145-10.265 15.607-15.165 24.195a45.8 45.8 0 0 0-1.784 42.715c7.242 15.388 22.4 26.462 40.542 29.623l.045.008a61.585 61.585 0 0 0 23.942-.61l39.043-8.858a302.328 302.328 0 0 1 66.83-7.468q2.816 0 5.629.052l37.383.695a303.032 303.032 0 0 1 52.387 5.557l54.42 10.641a60.869 60.869 0 0 0 21.66.32l6.583-1.084c18.425-3.037 33.821-14.166 41.183-29.772a45.351 45.351 0 0 0-1.882-42.676c-10.806-18.617-26.705-36.931-50.033-57.631Z" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+        Cart</button>
+    </nav>
+
+    <section class="productsec">
+
+        <button>
+            Back
+        </button>
+        <div>
+            <div>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            
+            </div>
+            <h1>
+                Amanita Gummies
+            </h1>
+            <p>
+                Amanita Gummies
+            </p>
+            <h2>
+                $13.99
+            </h2>
+            <div class="item-quantity">
+                <button onclick="subQuantity(this)" class="cart-item-quantity-minus">
+                    -
+                </button>
+                <div class="item-quantity-box">
+                    1
+                </div>
+                <button onclick="addQuantity(this)" class="cart-item-quantity-plus">
+                    +
+                </button>
+                </div>
+            <div>
+                <button onclick="addToCartt()" class="is-primary addtics">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        // Check if the item exists in localStorage
+        if (!localStorage.getItem('cart')) {
+        // If it doesn't exist, create and set the item in localStorage
+        localStorage.setItem('cart', '[]');
+        }
+        function getCart(){
+            return JSON.parse(localStorage.getItem('cart'))
+        }
+        function removeFromCart(){
+            var cart = getCart();
+            cart.push({
+                id:1,
+                price:100,
+                quantity:1,
+                name:'sdm',
+                image:'.png'
+            })
+            cart = JSON.stringify(cart)
+            
+            localStorage.setItem('cart',cart)
+            refreshCart()
+        }
+        function addToCart(id,price,quantity,name,image){
+            var cart = getCart();
+            cart.push({
+                id:id,
+                price:price,
+                quantity:quantity,
+                name:name,
+                image:image
+            })
+            cart = JSON.stringify(cart)
+            localStorage.setItem('cart',cart)
+            refreshCart()
+        }
+        function addToCartt(){
+            const name = document.querySelector("body > section > div > h1").innerHTML
+            const price = document.querySelector("body > section > div > h2").innerHTML.replace(/\$/g, '');
+
+            const image = document.querySelector("body > section > div > div:nth-child(1) > img").src
+            
+            const quantity = document.querySelector("body > section > div > div.item-quantity > div").innerHTML
+            addToCart(1,price,quantity,name,image)
+        }
+            
+        
+        function removeFromCartById(idToRemove) {
+            var cart = getCart();
+
+            // Find the index of the item with the specified id
+            var indexToRemove = -1;
+            for (var i = 0; i < cart.length; i++) {
+                if (cart[i].id === idToRemove) {
+                    indexToRemove = i;
+                    break;
+                }
+            }
+
+            // Remove the item if found
+            if (indexToRemove !== -1) {
+                cart.splice(indexToRemove, 1);
+            }
+
+            // Save the updated cart to localStorage
+            cart = JSON.stringify(cart);
+            localStorage.setItem('cart', cart);
+
+            refreshCart();
+        }
+
+
+        function refreshCart(){
+            const cartContainer = document.getElementsByClassName("cart-item-list")[0]
+        // Now you can use the item from localStorage
+        const yourItemValue = localStorage.getItem('cart');
+       const caritems = JSON.parse(yourItemValue)
+        cartContainer.innerHTML = ""
+        var total = 0;
+        caritems.forEach(item => {
+            for (let i = 0; i < item.quantity; i++) {
+                total+=parseFloat(item["price"]);
+            }
+            
+            document.getElementById("cartotal").innerHTML = "Total: $"+total
+            var htmlContent = '<div class="cart-item">' +
+    '<div class="cart-item-top">' +
+    '<img src="'+item["image"] +'">' +
+    '<p class="cart-item-title">' +
+    item["name"] +
+    '</p>' +
+    '</div>' +
+    '<div class="cart-item-bottom">' +
+    '<div class="cart-item-quantity">' +
+    '<button onclick="subQuantity(this)" class="cart-item-quantity-minus">' +
+    '-' +
+    '</button>' +
+    '<div class="cart-item-quantity-box">' +
+        item["quantity"] +
+    '</div>' +
+    '<button onclick="addQuantity(this)" class="cart-item-quantity-plus">' +
+    '+' +
+    '</button>' +
+    '</div>' +
+    '<p class="cart-item-price">' +
+    '$' +item["price"]+
+    '</p>' +
+    '</div>' +
+    '</div>';
+            cartContainer.innerHTML += htmlContent;
+        });
+        }
+       
+        refreshCart()
+    </script>
+    <script>
+        var carttotal = 0;
+        var cart = document.getElementsByClassName("cart-sidebar")[0]
+        var closecartbtn = document.getElementsByClassName("close-btn")[0]
+        function closecart(){
+            cart.classList.add("hidden");
+        }
+        function opencart(btn){
+            cart.classList.remove("hidden");
+        }
+        function addQuantity(btn){
+            var quantity = btn.parentElement.querySelector("div");
+            var quantitycount = parseInt(quantity.innerHTML)
+
+            quantitycount = quantitycount+1
+            quantity.innerHTML = quantitycount
+        }
+        function subQuantity(btn){
+            var quantity = btn.parentElement.querySelector("div");
+            var quantitycount = parseInt(quantity.innerHTML)
+
+            quantitycount = quantitycount-1
+            quantity.innerHTML = quantitycount
+        }
+        </script>
+</body>
+</html>
