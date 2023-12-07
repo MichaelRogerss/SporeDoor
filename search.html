@@ -51,40 +51,45 @@
         Cart</button>
     </nav>
 
-    <section class="productsec">
+    <section class="searchsec">
 
-        <button class="hidden">
-            Back
-        </button>
-        <div>
-            <div>
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
-            
-            </div>
-            <h1>
-                Amanita Gummies
-            </h1>
-            <p>
-                Amanita Gummies
-            </p>
-            <h2>
-                $13.99
-            </h2>
-            <div class="item-quantity">
-                <button onclick="subQuantity(this)" class="cart-item-quantity-minus">
-                    -
-                </button>
-                <div class="item-quantity-box">
-                    1
-                </div>
-                <button onclick="addQuantity(this)" class="cart-item-quantity-plus">
-                    +
-                </button>
-                </div>
-            <div>
-                <button onclick="addToCartt()" class="is-primary addtics">Add To Cart</button>
-            </div>
-        </div>
+     <input placeholder="Search"/>
+     <select>
+        <option>
+            Price: Low to High
+        </option>
+        <option>
+            Price: High to Low
+        </option>
+     </select>
+
+     <div class="grid-container">
+        <a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Amanita Dried Mushroom
+        </a>
+        <a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Amanita Gummies
+        </a>
+        <a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Item 1
+        </a><a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Amanita Gummies
+        </a>
+        <a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Item 1
+        </a><a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Amanita Gummies
+        </a>
+        <a href="product.html" class="grid-item">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdba954f-a7f5-417a-9337-8b719326f6be/de8sv4s-b0830943-8309-47e2-822d-afb1af606840.png/v1/fill/w_1280,h_1334/free_red_cap_mushroom_overlay__by_lewis4721_de8sv4s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzNCIsInBhdGgiOiJcL2ZcL2NkYmE5NTRmLWE3ZjUtNDE3YS05MzM3LThiNzE5MzI2ZjZiZVwvZGU4c3Y0cy1iMDgzMDk0My04MzA5LTQ3ZTItODIyZC1hZmIxYWY2MDY4NDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fNIBVrw5NJFJZVRcF97O5q2npMKG29hLHDKyJYcblDo">
+            Item 1
+        </a></div>
     </section>
     
 
