@@ -38,7 +38,7 @@
         <p id="cartotal">
             Total: $0.00
         </p>
-        <button class="is-primary">
+        <button onclick="gotoCheckout()" class="is-primary">
             Checkout
         </button>
     </div>
@@ -89,6 +89,9 @@
     
 
     <script>
+        function gotoCheckout(){
+            window.location.href = "checkout.html"
+        }
         // Check if the item exists in localStorage
         if (!localStorage.getItem('cart')) {
         // If it doesn't exist, create and set the item in localStorage
